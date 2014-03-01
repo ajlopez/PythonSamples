@@ -1,0 +1,1 @@
+import requestsimport syswords = sys.argv[:]words.pop(0)query = " ".join(words)if query:    result = requests.get('http://preciosaannalisa.heroku.com/api/analyze?q=' + query)    print(result.text)else:    print("Bazinga!!!")
