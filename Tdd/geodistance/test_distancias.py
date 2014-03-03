@@ -20,6 +20,18 @@ class DistanciasTests(unittest.TestCase):
         self.assertTrue(result.longitud <= -1)
         self.assertTrue(result.longitud >= -1.1)
 
+    def test_distancia_112_kms_este_a_latitud_60(self):
+        result = desplaza(60, 0, 0, 112)
+        self.assertAlmostEqual(60, result.latitud)
+        self.assertTrue(result.longitud >= 2)
+        self.assertTrue(result.longitud <= 2.1)
+
+    def test_distancia_112_kms_oeste_a_latitud_60(self):
+        result = desplaza(60, 0, 180, 112)
+        self.assertAlmostEqual(60, result.latitud)
+        self.assertTrue(result.longitud <= -2)
+        self.assertTrue(result.longitud >= -2.1)
+
     def test_distancia_112_kms_norte(self):
         result = desplaza(0, 0, 90, 112)
         self.assertTrue(result.latitud >= 1)
