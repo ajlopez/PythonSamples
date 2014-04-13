@@ -1,0 +1,1 @@
+drop table if exists customers;create table customers (  id integer primary key autoincrement,  name text not null,  address text not null);drop table if exists suppliers;create table suppliers (  id integer primary key autoincrement,  name text not null,  address text not null);
