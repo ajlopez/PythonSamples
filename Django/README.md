@@ -3,3 +3,5 @@
 ## References
 
 - [Simplifying Django](http://programming.oreilly.com/2014/04/simplifying-django.html)
+- [PyConference Python website to manage conferences](https://github.com/PyConference/PyConference)
+
